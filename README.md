@@ -29,7 +29,7 @@ External Links
 Just some stuff that I want to remember. Shortcuts for stuff, walkthroughs, guides, whatever.
 
 
-## DWM ##
+## DWM 
 
 DWM on Ubuntu is fairly easy. Install and compile DWM from source first, then `apt-get install dwm`. Installing from the Repos after compiling form source sets some config stuff so that I don't have to. Makes life easier.
 
@@ -40,7 +40,7 @@ On my laptop at home, I clond into a suckless folder to keep everything in one s
 
 
 
-### DWM Status ###
+### DWM Status 
 
 Clone from Suckless git repo, and and then use make to install.
 
@@ -57,53 +57,53 @@ And then to start:
 `xsetroot --name "$(dwmstatus)`
 
 
-### barM.c ###
+### barM.c 
 
 barM.c is a better config of DWM Status. 
 
 
-#### Download ####  
+#### Download 
 
 `wget http://dwm.suckless.org/dwmstatus/barM.c`
 
 
-#### Compile ###
+#### Compile 
 
 `gcc -o barM barM.c -O2 -s -lX11`
 
 
-#### Run ####
+#### Run 
 
 Same as above, run with
 
 `xsetroot -name "$(barM)"`
 
 
-#### Bash Script to start on Boot ####
+#### Bash Script to start on Boot
 
 Soon (tm).
 
 [top](https://github.com/luthes/miscdocs#quick-reference)
 
 
-## Salt Stack ##
+## Salt Stack
 
 [top](https://github.com/luthes/miscdocs#quick-reference)
 
 
-## TerraForm ##
+## TerraForm
 
 [top](https://github.com/luthes/miscdocs#quick-reference)
 
 
-## AWS CLI ##
+## AWS CLI 
 
 
 
 [top](https://github.com/luthes/miscdocs#quick-reference)
 
 
-## VIM ##
+## VIM 
 
 ![VIM Cheat Sheet](https://github.com/luthes/miscdocs/blob/master/vimcheatsheet.png "Cheat Sheet")
 
@@ -115,7 +115,7 @@ Additionally, `vimtutor` should be installed with vim. Just run in a terminal.
 [top](https://github.com/luthes/miscdocs#quick-reference)
 
 
-## tmux ## 
+## tmux 
 
 [tmux Primer by Daniel Miessler](https://danielmiessler.com/study/tmux)
 

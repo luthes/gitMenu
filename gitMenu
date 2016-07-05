@@ -2,8 +2,6 @@
 
 #This is going to create menus and ^top links for Github pages. Hopefully.
 
-import os
-
 
 #################################################################33
 #
@@ -17,15 +15,16 @@ import os
 #
 	
 
+import os
+
 
 
 def getUser():
 	#Gets Users Github URL from .git/config
-	print("--------start getUrl-----------")
+#	print("--------start getUser-----------")
 	inFile = "/home/steven/scripts/gitMenu/.git/config"
-	#get Config file from /.git/config
+	#get url from Config file from /.git/config
 	url = ''
-	print(url)
 	with open (inFile, "r") as fileIn:
 		for line in fileIn:
 			if line[0:7] == "\turl = ":
@@ -34,35 +33,51 @@ def getUser():
 
 def getFile():
 	#Gets list of needed menu items from README.md
-	print("---------START getFile ---------")
+#	print("---------START getFile ---------")
 	#Get the README.md file from current directory.
 	list = []
 	with open("README.md", "r") as fileIn:
 		for line in fileIn:
 			if line[0:3] == "## ":
-				list += line.splitlines() 
+				list += line.splitlines()
 	return list
 
 def makeUrls():
 	#Handles the list of completed URLS.
-	print("--------- START makeUrls --------------")
+#	print("--------- START makeUrls --------------")
 	menuList = [getUser().replace("\n", "#")
 		 + item.strip('## ').replace(' ', '-').lower() for item in getFile()]
-	print(menuList)
-
+	return menuList
 
 def makeMenu():
-	urls = makeUrls()
-	print("-------- Start MakeMenu ----------")
+#	print("-------- Start MakeMenu ----------")
 	urlTags = [item.strip('## ').upper() for item in getFile()]
-	print(''.join([str(a) + b for a,b in zip(urlTags, urls)]))
+	print(urlTags)
+	urls = makeUrls()
+	print(urls)	
+
+
+
+# I left off here, the menu links, and menu tags both work. They just need zipped together to make the menu list.
+
+
+
+
+
+
 
 
 def main():
 	makeMenu()
-	makeUrls()
-
 
 if __name__ == '__main__':
 	main()
+
+
+
+
+
+
+
+
 
