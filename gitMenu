@@ -9,7 +9,7 @@
 # Initial Creation: July 3 2016
 #
 # Changelog
-#
+# Jul 7 - I probably won't work on this any more. Easier to just type
 #
 #
 #
@@ -59,12 +59,6 @@ def makeMenu():
 
 
 # I left off here, the menu links, and menu tags both work. They just need zipped together to make the menu list.
-
-
-
-
-
-
 
 
 def main():
